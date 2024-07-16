@@ -1,0 +1,98 @@
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7dbb0;
+    height: 80vh;
+    margin: 1vh;
+    padding: 0%;
+}
+
+.contentGrid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.course-image {
+    width: auto;
+    max-width: 600px;
+    height: 60vh;
+    border-radius: 5%;
+    margin-top: 15vh;
+ 
+}
+
+.course-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Ajusta el ancho del texto según sea necesario */
+}
+
+.course-description p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#a47b5e;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    margin: 0px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebc59;
+}
+.course-container h3 {
+    font-size: 1.2em;
+    margin: 0px;
+    margin-bottom: 1.5vh;
+}
+.course-container h2 {
+    color:#a47b5e;
+    font-size: 3em;
+    margin: 0px;
+    margin-bottom: 1.5vh;
+    margin-top: 2vh;
+}
+
+.countdown {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.timer {
+    font-size: 1.9em;
+    font-weight: 100;
+    color: #000000;
+    text-shadow: 0 0 20px #393237;
+}
+
+.timer div {
+    display: inline-block;
+    min-width: 90px;
+}
+
+.timer span {
+    color: #393237;
+    display: block;
+    font-size: .35em;
+    font-weight: 400;
+}
