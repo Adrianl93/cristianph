@@ -5,6 +5,8 @@
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
+    z-index: 1000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra inferior y derecha */
 }
 
 .navbar a {

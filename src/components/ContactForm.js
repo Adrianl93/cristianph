@@ -55,7 +55,6 @@ const ContactForm = ({ data }) => {
             message: formData.message,
         };
 
-
         emailjs.send(
             'service_uovm675', // Reemplaza con tu Service ID
             'template_p7qrdao', // Reemplaza con tu Template ID
@@ -74,52 +73,48 @@ const ContactForm = ({ data }) => {
         });
     };
 
-
-    
     return (
-        <div className="contentGrid">
-            
-                <div className="contact-image-container">
-                    <img src={data.image} alt="Curso de fotografía" className="contact-image" />
+        <div className="contact-form-container">
+            <div className="contact-image-container">
+                <img src={data.image} alt="Curso de fotografía" className="contact-image" />
+            </div>
+            <form className="contact-form" onSubmit={handleSubmit}>
+                <h2 className='titleh2'>{data.title}</h2>
+                <div>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Nombre"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                    {formErrors.name && <p className="error">{formErrors.name}</p>}
                 </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
-       
-        <h2 className='titleh2'>{data.title}</h2>
-        <div>
-            <input
-                type="text"
-                name="name"
-                placeholder="Nombre"
-                value={formData.name}
-                onChange={handleChange}
-                required
-            />
-            {formErrors.name && <p className="error">{formErrors.name}</p>}
+                <div>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                    />
+                    {formErrors.email && <p className="error">{formErrors.email}</p>}
+                </div>
+                <div>
+                    <textarea
+                        name="message"
+                        placeholder="Mensaje"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    />
+                    {formErrors.message && <p className="error">{formErrors.message}</p>}
+                </div>
+                <button type="submit" disabled={!isFormValid}>Enviar</button>
+            </form>
         </div>
-        <div>
-            <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-            />
-            {formErrors.email && <p className="error">{formErrors.email}</p>}
-        </div>
-        <div>
-            <textarea
-                name="message"
-                placeholder="Mensaje"
-                value={formData.message}
-                onChange={handleChange}
-                required
-            />
-            {formErrors.message && <p className="error">{formErrors.message}</p>}
-        </div>
-        <button type="submit" disabled={!isFormValid}>Enviar</button>
-    </form>
-    </div>
     );
 };
 

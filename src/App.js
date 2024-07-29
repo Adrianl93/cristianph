@@ -31,7 +31,7 @@ const projectData = {
         {
             id: "home",
             title: "Bienvenido al Curso de Fotografía",
-            description: "Aprende los fundamentos de la fotografía profesional.",
+            description: "Aprende los fundamentos de la fotografía profesional. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, arcu nec facilisis scelerisque, lectus dolor commodo urna, et eleifend dui ipsum sed massa. Donec ultrices libero at leo tristique, id dictum ligula sodales. Sed sodales molestie ligula vel facilisis. Aliquam congue sem eget urna congue, eu lobortis dui hendrerit. Aenean id accumsan urna. Donec nec turpis sem. Nunc quis sodales sapien, at faucibus nibh. Nulla congue justo vitae ligula luctus, rutrum luctus sapien placerat. Maecenas vehicula massa vitae diam malesuada varius. Sed aliquet condimentum sem ut blandit. Pellentesque vitae urna at ipsum convallis dapibus vitae ac lectus. Phasellus at pellentesque enim.",
             image: foto1,
             backgroundColor: "#be9380"
         },
@@ -40,7 +40,8 @@ const projectData = {
             title: "Fotografía",
             description: "Contenido de la primera sección. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             image: foto2,
-            backgroundColor: "#d4b39f"
+            backgroundColor: "#d4b39f",
+            images: [foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4] 
         },
         {
             id: "section2",
