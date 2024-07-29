@@ -8,15 +8,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #EAD4BF;
 }
 
 .navbar {
   position: fixed;
+  top: 0; /* Asegura que se quede en la parte superior */
   width: 100%;
   display: flex;
   justify-content: space-around;
   background: var(--primary-color);
   padding: 10px;
+  z-index: 1000; /* Asegura que se quede por encima del contenido */
 }
 
 .navbar a {
@@ -30,6 +33,7 @@ body {
   border-radius: 5px;
   color: black;
 }
+
 
 .section {
   height: 100vh;
@@ -91,11 +95,14 @@ body {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0; /* Asegura que se quede en la parte inferior */
+  width: 100%;
   background: var(--primary-color);
   color: white;
   padding: 10px;
   text-align: center;
-  
+  z-index: 1000; /* Asegura que se quede por encima del contenido */
 }
 
 .footer a {

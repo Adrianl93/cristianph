@@ -100,3 +100,17 @@
     font-size: .35em;
     font-weight: 400;
 }
+.view-courses-button {
+    background-color: #EAD4BF; /* Color de fondo */
+    color: #A47B5E;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0.5vh; /* Espacio arriba del botón */
+}
+
+.view-courses-button:hover {
+    background-color: #f5dfb0; /* Color de fondo en hover */
+}
