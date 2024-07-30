@@ -49,17 +49,17 @@ const ContactForm = ({ data }) => {
             return;
         }
         const templateParams = {
-            to_name: 'Cristian', // Nombre del destinatario
+            to_name: process.env.REACT_APP_TO_NAME, // Nombre del destinatario
             from_name: formData.name,
             from_email: formData.email,
             message: formData.message,
         };
 
         emailjs.send(
-            'service_uovm675', // Reemplaza con tu Service ID
-            'template_p7qrdao', // Reemplaza con tu Template ID
+            process.env.REACT_APP_EMAILJS_SERVICE_ID, // Reemplaza con tu Service ID
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Reemplaza con tu Template ID
             templateParams,
-            'JomxgeoFsEmL264YF' // Reemplaza con tu User ID/ Public Key
+            process.env.REACT_APP_EMAILJS_USER_ID // Reemplaza con tu User ID/ Public Key
         ).then((response) => {
             alert('Mensaje enviado exitosamente!');
             setFormData({
