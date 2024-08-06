@@ -33,7 +33,7 @@ const projectData = {
     sections: [
         {
             id: "home",
-            title: "Bienvenido al Curso de Fotografía",
+            title: "¡Bienvenido!",
             description: "Aprende los fundamentos de la fotografía profesional. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, arcu nec facilisis scelerisque, lectus dolor commodo urna, et eleifend dui ipsum sed massa. Donec ultrices libero at leo tristique, id dictum ligula sodales. Sed sodales molestie ligula vel facilisis. Aliquam congue sem eget urna congue, eu lobortis dui hendrerit. Aenean id accumsan urna. Donec nec turpis sem. Nunc quis sodales sapien, at faucibus nibh. Nulla congue justo vitae ligula luctus, rutrum luctus sapien placerat. Maecenas vehicula massa vitae diam malesuada varius. Sed aliquet condimentum sem ut blandit. Pellentesque vitae urna at ipsum convallis dapibus vitae ac lectus. Phasellus at pellentesque enim.",
             image: foto1,
             backgroundColor: "#be9380"
@@ -48,13 +48,27 @@ const projectData = {
         },
         {
             id: "section2",
-            title: "Cursos",
-            description: "Contenido de la segunda sección. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
+            title: "Curso de fotografía inicial ",
+            description: [
+                "¡Descubre la fotografía con este curso inicial para principiantes! 📸✨",
+                "Aprende desde los conceptos básicos de la cámara hasta capturar imágenes con confianza y creatividad.",
+                "El curso incluye clases prácticas en distintas locaciones de la ciudad donde aprenderás composición, iluminación y manejo de la cámara. Te guiaré paso a paso para capturar imágenes que cuenten historias.",
+                "Contarás con orientación y apoyo para sentirte seguro en tu viaje fotográfico. Con sesiones prácticas, obtendrás habilidades y confianza para expresarte a través de la fotografía.",
+                "¿Listo para desbloquear tu potencial creativo? ¡Únete y descubre el poder de contar historias a través de imágenes! 🌟",
+                "¡Reserva tu lugar y comienza tu aventura fotográfica!"
+              ],  
+            starterDate:"Agosto 2024",
+            schedule:"Sábados de 10 a 13 hrs",
+            duration:"8 clases ( 2 meses)",
+            modality:"Clases prácticas en locaciones exteriores",
+            booking:"Abonando el 50% al momento de la inscripción",
+            info:"Info y reservas: 3584601279",
+            limitedPlaces:"Cupos limitados",
             image: foto3,
             backgroundColor: "#ead4bf",
             courseStartDate: '2024-08-03T10:00:00', // Fecha del curso
             contact: {
-                whatsapp: "https://wa.me/3584601279", // Asegúrate de que el número de WhatsApp está definido aquí
+                whatsapp: "https://wa.me/3584601279", // Numero de whatsapp
                 message: "Hola Cristian!! quiero inscribirme a tu curso"
             }
         },

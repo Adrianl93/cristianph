@@ -49,7 +49,36 @@ const Courses = ({ data }) => {
                 </div>
                 <div className="course-description">
                     <h2>{data.title}</h2>
-                    <p>{data.description}</p>
+                    <p>
+                        {data.description.map((line, index) => (
+                            <React.Fragment key={index}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        ))}
+                    </p>
+                    <div className="info-and-courses">
+                        <div className="infoPlace">
+                            <b>Comienzo:</b> {data.starterDate}
+                            <br />
+                            <b>Cursado:</b> {data.schedule}
+                            <br />
+                            <b>Duración:</b> {data.duration}
+                            <br />
+                            {data.modality}
+                            <br />
+                            <b>Reservas:</b> {data.booking}
+                            <br />
+                            <b>{data.limitedPlaces}</b>
+                        </div>
+                        {/* <div className="online-courses-invite">
+                            <h3>Recuerda, si no puedes asistir, siempre puedes comprar nuestros cursos online clickeando aquí:</h3>
+                            <button className="view-courses-button" onClick={handleViewCoursesClick}>
+                                Ver Cursos Online
+                            </button>
+                        </div> */}
+                    </div>
+
                     <button className="whatsapp-button" onClick={handleWhatsAppClick}>
                         Inscribirse&nbsp;&nbsp;&nbsp;&nbsp;<img src={whatsappIcon} alt="WhatsApp Icon" width="25" height="25" />
                     </button>
@@ -62,13 +91,6 @@ const Courses = ({ data }) => {
                             <div>{timeLeft.seconds}<span>segundos</span></div>
                         </div>
                     </div>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <h3>Si no puedes asistir, siempre puedes comprar nuestros cursos online clickeando aquí:</h3>
-                    <button className="view-courses-button" onClick={handleViewCoursesClick}>
-                        Ver Cursos Online
-                    </button>
                 </div>
             </div>
         </div>
