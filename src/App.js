@@ -130,27 +130,27 @@ function App() {
     }, []);
 
     return (
-        <Router>
-            <div className="App">
-                <NavBar data={projectData.navBar} />
-                <Routes>
-                    {/* Ruta para la página principal */}
-                    <Route path="/" element={<Home data={projectData} />} />
+        <Router basename="/webPhotography">
+        <div className="App">
+            <NavBar data={projectData.navBar} />
+            <Routes>
+                {/* Ruta para la página principal */}
+                <Route path="/" element={<Home data={projectData} />} />
 
-                    {/* Ruta para la página de Cursos Online */}
-                    <Route path="/OnlineCourses" element={<OnlineCourses data={projectData} />} />
+                {/* Ruta para la página de Cursos Online */}
+                <Route path="/OnlineCourses" element={<OnlineCourses data={projectData} />} />
 
-                    {/* Rutas para las secciones */}
-                    {projectData.sections.map((section) => (
-                        <Route key={section.id} path={`/${section.id}`} element={<Section data={section} />} />
-                    ))}
+                {/* Rutas para las secciones */}
+                {projectData.sections.map((section) => (
+                    <Route key={section.id} path={`/${section.id}`} element={<Section data={section} />} />
+                ))}
 
-                    {/* Ruta por defecto o 404 */}
-                    <Route path="*" element={<div>404 Not Found</div>} />
-                </Routes>
-                <Footer data={projectData.footer} />
-            </div>
-        </Router>
+                {/* Ruta por defecto o 404 */}
+                <Route path="*" element={<div>404 Not Found</div>} />
+            </Routes>
+            <Footer data={projectData.footer} />
+        </div>
+    </Router>
     );
 }
 
