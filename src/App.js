@@ -130,7 +130,7 @@ function App() {
     }, []);
 
     return (
-        <Router basename="/webPhotography">
+        <Router>
         <div className="App">
             <NavBar data={projectData.navBar} />
             <Routes>
