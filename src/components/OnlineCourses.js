@@ -9,7 +9,19 @@ const CourseItem = ({ title, description, whatsappMessage }) => {
     return (
         <div className="course-item">
             <h3>{title}</h3>
-            <p>{description}</p>
+            <p className="course-text">
+  {Array.isArray(description) ? (
+    description.map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ))
+  ) : (
+    description 
+  )}
+</p>
+
             <button onClick={handleClick} className="whatsapp-button">
                 Enviar mensaje
             </button>
@@ -38,13 +50,18 @@ const OnlineCourses = ({ data }) => {
             title: data.onlineCourses.curso4.title,
             description: data.onlineCourses.curso4.description,
             whatsappMessage: data.onlineCourses.curso4.whatsappMessage
+        },
+        {
+            title: data.onlineCourses.curso5.title,
+            description: data.onlineCourses.curso5.description,
+            whatsappMessage: data.onlineCourses.curso5.whatsappMessage
         }
     ];
 
     return (
         <div className="courses-container"> 
             <div className="courses-online">
-                <h1>Cursos Online</h1>
+                
                 <div className="courses-grid">
                     {courses.map((course, index) => (
                         <CourseItem

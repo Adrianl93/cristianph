@@ -3,7 +3,7 @@
     max-width: 1200px; /* Ajusta el ancho según tus necesidades */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     margin-top: 10vh;
-    
+    margin-bottom: 10vh;
 }
 
 /* Contenedor de cursos */
@@ -25,7 +25,8 @@
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra sutil */
     padding: 20px; /* Espaciado interno */
-    height: 32vh;
+    height: 35vh;
+    width: 37vw;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra el contenido horizontalmente */
@@ -37,7 +38,6 @@
     width: 100%; /* Asegura que el contenedor del botón ocupe el ancho completo */
     display: flex;
     justify-content: center; /* Centra el botón horizontalmente */
-    margin-top: auto; /* Empuja el botón hacia el fondo del item */
 }
 
 /* Estilos para el botón de WhatsApp */
@@ -53,4 +53,8 @@
 
 .whatsapp-button:hover {
     background-color: #128c7e; /* Color de WhatsApp en hover */
+}
+
+.course-text{
+    height: 20vh;
 }

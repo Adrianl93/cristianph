@@ -25,6 +25,7 @@
     height: 70vh;
     border-radius: 5%;
     margin-top: 5vh;
+    object-fit: cover; 
  
 }
 
@@ -37,7 +38,8 @@
 }
 
 .course-description p {
-    font-size: 1.1em;
+    font-size: clamp(14px, 1.1rem, 16px); /* Tamaño mínimo 1rem, tamaño ideal 1.1rem, tamaño máximo 24px */
+    margin-bottom: 20px;
     margin-bottom: 20px;
     text-align: center;
     color:#ead4bf;
@@ -50,7 +52,7 @@
     margin-bottom: 20px;
 }
 .infoPlace {
-    font-size: 1.1em;
+    font-size: clamp(14px, 1.1rem, 16px); /* Tamaño mínimo 1rem, tamaño ideal 1.1rem, tamaño máximo 24px */
     margin-bottom: 20px;
     text-align: left; 
     color: #ead4bf;
@@ -92,7 +94,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 16px;
     cursor: pointer;
     margin-bottom: 20px;
     display: flex;
@@ -106,27 +108,27 @@
     background-color: #1ebc59;
 }
 .course-container h3 {
-    font-size: 1em;
+    font-size: clamp(14px, 1.1rem, 16px); /* Tamaño mínimo 1rem, tamaño ideal 1.1rem, tamaño máximo 24px */
     margin: 0px;
     margin-bottom: 1.5vh;
     color:#EAD4BF;
 }
 .course-container h2 {
     color:#ead4bf;
-    font-size: 2.2em;
+    font-size: clamp(20px, 1.8rem, 28px); /* Tamaño mínimo 1rem, tamaño ideal 1.1rem, tamaño máximo 24px */
     margin: 0px;
     margin-bottom: 2vh;
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
 .countdown {
-    font-size: 1em;
-    margin-top: 20px;
+    font-size: 1.7rem;
+    margin-top: 1vh;
     
 }
 
 .timer {
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-weight: 100;
     color: #ead4bf;
     text-shadow: 0 0 20px #393237;
@@ -140,7 +142,7 @@
 .timer span {
     color: #ead4bf;
     display: block;
-    font-size: .35em;
+    font-size: 1rem;
     font-weight: 400;
 }
 

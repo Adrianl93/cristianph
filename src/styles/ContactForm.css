@@ -56,10 +56,11 @@
 }
 
 .titleh2 {
-  font-size: 2em;
+  font-size: 1.3rem;
   margin: 0px;
-  margin-bottom: 1.5vh;
-  margin-top: 7vh;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+  color:#A47B5E;
 }
 
 .contact-form .error {

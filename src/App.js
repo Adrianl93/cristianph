@@ -9,6 +9,16 @@ import foto1 from './assets/foto1.jpg';
 import foto2 from './assets/foto2.jpg';
 import foto3 from './assets/foto3.jpg';
 import foto4 from './assets/foto4.jpg';
+import foto5 from './assets/foto5.jpg';
+import foto6 from './assets/foto6.jpg';
+import foto7 from './assets/foto7.jpg';
+import foto8 from './assets/foto8.jpg';
+import foto9 from './assets/foto9.jpg';
+import foto10 from './assets/foto10.jpg';
+import foto11 from './assets/foto11.jpg';
+import foto12 from './assets/foto12.jpg';
+
+
 
 import './App.css';
 
@@ -34,29 +44,33 @@ const projectData = {
         {
             id: "home",
             title: "¡Bienvenido!",
-            description: "Aprende los fundamentos de la fotografía profesional. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, arcu nec facilisis scelerisque, lectus dolor commodo urna, et eleifend dui ipsum sed massa. Donec ultrices libero at leo tristique, id dictum ligula sodales. Sed sodales molestie ligula vel facilisis. Aliquam congue sem eget urna congue, eu lobortis dui hendrerit. Aenean id accumsan urna. Donec nec turpis sem. Nunc quis sodales sapien, at faucibus nibh. Nulla congue justo vitae ligula luctus, rutrum luctus sapien placerat. Maecenas vehicula massa vitae diam malesuada varius. Sed aliquet condimentum sem ut blandit. Pellentesque vitae urna at ipsum convallis dapibus vitae ac lectus. Phasellus at pellentesque enim.",
+            description1: "¡Hola! Soy Cristian Barizone, fotógrafo profesional especializado en familias.",
+            description2: "Vivo en Río Cuarto y la fotografía es mi gran pasión.",
+            description3: "A lo largo de mi carrera, me he formado con referentes destacados tanto a nivel nacional como internacional, lo que me ha permitido perfeccionar mi técnica y estilo.",
+            description4: "Cursé estudios en la Universidad Nacional de Río Cuarto (UNRC) y en la Universidad Católica de Salta (UCASAL), especializándome en fotografía de niños y familias, para capturar esos momentos únicos y memorables que atesorarás para siempre.",
             image: foto1,
             backgroundColor: "#be9380"
         },
         {
             id: "section1",
             title: "Fotografía",
-            description: "Contenido de la primera sección. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "",
             image: foto2,
             backgroundColor: "#d4b39f",
-            images: [foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4,foto1, foto2, foto3, foto4] 
+            images: [foto4, foto5, foto6, foto7,foto8, foto9, foto10, foto11,foto12] 
         },
         {
             id: "section2",
-            title: "Curso de fotografía inicial ",
+            title: "Cursos de fotografía inicial ",
             description: [
-                "¡Descubre la fotografía con este curso inicial para principiantes! 📸✨",
-                "Aprende desde los conceptos básicos de la cámara hasta capturar imágenes con confianza y creatividad.",
-                "El curso incluye clases prácticas en distintas locaciones de la ciudad donde aprenderás composición, iluminación y manejo de la cámara. Te guiaré paso a paso para capturar imágenes que cuenten historias.",
-                "Contarás con orientación y apoyo para sentirte seguro en tu viaje fotográfico. Con sesiones prácticas, obtendrás habilidades y confianza para expresarte a través de la fotografía.",
-                "¿Listo para desbloquear tu potencial creativo? ¡Únete y descubre el poder de contar historias a través de imágenes! 🌟",
-                "¡Reserva tu lugar y comienza tu aventura fotográfica!"
-              ],  
+                "¡Explora el arte de la fotografía con nuestros cursos! 📸✨",
+                "Encuentra el curso perfecto para tus necesidades artísticas.",
+                "Ofrecemos modalidad virtual y presencial con prácticas en diversos rincones de la ciudad.",
+                "Recibirás orientación personalizada y apoyo constante para que te sientas seguro en tu camino fotográfico.",
+                "¿Listo para liberar tu potencial creativo? ¡Únete y aprende a contar historias a través de imágenes poderosas! 🌟",
+                "¡Reserva tu lugar y comienza tu aventura en el mundo de la fotografía!"
+              ],
+              
             starterDate:"Agosto 2024",
             schedule:"Sábados de 10 a 13 hrs",
             duration:"8 clases ( 2 meses)",
@@ -64,7 +78,7 @@ const projectData = {
             booking:"Abonando el 50% al momento de la inscripción",
             info:"Info y reservas: 3584601279",
             limitedPlaces:"Cupos limitados",
-            image: foto3,
+            image: foto2,
             backgroundColor: "#ead4bf",
             courseStartDate: '2024-08-03T10:00:00', // Fecha del curso
             contact: {
@@ -76,7 +90,7 @@ const projectData = {
             id: "section3",
             title: "Contacto",
             description: "",
-            image: foto4,
+            image: foto3,
             backgroundColor: "#f5dfb0",
         
             form: {
@@ -95,27 +109,66 @@ const projectData = {
     onlineCourses:  { 
         curso1: {
             id:1,
-            title: 'Curso 1',
-            description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit consequat habitasse netus quam tristique montes nec torquent pharetra, id ut nulla vehicula lectus odio pretium nisl luctus vulputate dui eleifend diam ultricies natoque. Egestas semper dis hendrerit penatibus est varius gravida magnis ut congue scelerisque, nostra sociis libero quam habitant sodales sed platea fringilla. Non nascetur scelerisque vitae penatibus felis eget volutpat tincidunt magnis suscipit.',
-            whatsappMessage: 'Hola, estoy interesado en el Curso 1',
+            title: 'Curso de Fotografía Inicial',
+            description: [
+                "¡Descubre la fotografía con este curso inicial para principiantes! 📸✨",
+                "Aprende desde los conceptos básicos de la cámara hasta capturar imágenes con confianza y creatividad.",
+                "El curso incluye clases prácticas en distintas locaciones de la ciudad donde aprenderás composición, iluminación y manejo de la cámara. Te guiaré paso a paso para capturar imágenes que cuenten historias.",
+                "¿Listo para desbloquear tu potencial creativo? 🌟",
+                "¡Reserva tu lugar y comienza tu aventura fotográfica!"
+              ], 
+            whatsappMessage: 'Hola, estoy interesado en el Curso de Fotografía Inicial',
         },
         curso2: {
             id:2,
-            title: 'Curso 2',
-            description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit consequat habitasse netus quam tristique montes nec torquent pharetra, id ut nulla vehicula lectus odio pretium nisl luctus vulputate dui eleifend diam ultricies natoque. Egestas semper dis hendrerit penatibus est varius gravida magnis ut congue scelerisque, nostra sociis libero quam habitant sodales sed platea fringilla. Non nascetur scelerisque vitae penatibus felis eget volutpat tincidunt magnis suscipit.',
-            whatsappMessage: 'Hola, estoy interesado en el Curso 2',
+            title: 'Curso de Fotografía Avanzado',
+            description: [
+                "¡Lleva tus técnicas fotográficas al siguiente nivel con este curso avanzado! 📸✨",
+                "Explora técnicas avanzadas de composición, manejo de luz, y retoque digital para crear imágenes impactantes perfeccionando tu estilo y visión artística.",
+                "Te acompañaré a través de sesiones en diferentes locaciones, trabajando con iluminación natural y artificial para conseguir resultados profesionales.",
+                "¿Listo para perfeccionar tu técnica y destacar en el mundo de la fotografía? 🌟",
+                "¡Reserva tu lugar y transforma tu pasión en arte fotográfico!"
+                ],
+            whatsappMessage: 'Hola, estoy interesado en el Curso de Fotografía Avanzado',
         },
         curso3: {
             id:3,
-            title: 'Curso 3',
-            description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit consequat habitasse netus quam tristique montes nec torquent pharetra, id ut nulla vehicula lectus odio pretium nisl luctus vulputate dui eleifend diam ultricies natoque. Egestas semper dis hendrerit penatibus est varius gravida magnis ut congue scelerisque, nostra sociis libero quam habitant sodales sed platea fringilla. Non nascetur scelerisque vitae penatibus felis eget volutpat tincidunt magnis suscipit.',
-            whatsappMessage: 'Hola, estoy interesado en el Curso 3',
+            title: 'Workshop de Fotografía',
+            description: [
+                "¡Transforma tu forma de ver la fotografía con este workshop de alto nivel! 📸✨",
+                "Sumérgete en una experiencia donde aprenderás técnicas avanzadas de composición y manejo de luz directamente en el campo.",
+                "Participa en sesiones prácticas en diversas locaciones obteniendo resultados impactantes",
+                "Trabaja de cerca con un fotógrafo experimentado que te guiará en cada paso, ayudándote a perfeccionar tu técnica y a crear imágenes únicas.",
+                "¿Listo para llevar tus habilidades a la práctica y destacar en el mundo de la fotografía? 🌟",
+                "¡Inscríbete ahora y vive una experiencia fotográfica transformadora!"
+            ],
+            whatsappMessage: 'Hola, estoy interesado en el Workshop de fotografía',
         },
         curso4: {
             id:4,
-            title: 'Curso 4',
-            description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit consequat habitasse netus quam tristique montes nec torquent pharetra, id ut nulla vehicula lectus odio pretium nisl luctus vulputate dui eleifend diam ultricies natoque. Egestas semper dis hendrerit penatibus est varius gravida magnis ut congue scelerisque, nostra sociis libero quam habitant sodales sed platea fringilla. Non nascetur scelerisque vitae penatibus felis eget volutpat tincidunt magnis suscipit.',
-            whatsappMessage: 'Hola, estoy interesado en el Curso 4',
+            title: 'Clase de Edición fotográfica',
+            description: [
+                "¡Transforma tus fotografías desde cero con nuestra clase de edición básica! 🎨📸",
+                "Descubre los fundamentos esenciales para mejorar tus imágenes con técnicas sencillas de edición, desde la corrección de color hasta el retoque inicial.",
+                "Aprende a aplicar ajustes básicos de edición para transformar tus fotos en creaciones visuales impactantes, sin necesidad de experiencia previa.",
+                "¿Listo para dar el primer paso en el arte de la edición y ver cómo tus fotos cobran vida? 🌟",
+                "¡Inscríbete y comienza a transformar tus imágenes en obras maestras con técnicas accesibles y prácticas!"
+            ]
+            ,
+            whatsappMessage: 'Hola, estoy interesado en la Clase de Edición fotográfica',
+        },
+        curso5: {
+            id:5,
+            title: 'Mentoring 1 to 1',
+            description: [
+                "¿Deseas atención personalizada? ¡nuestro mentoring 1 a 1 es la solución! 📸✨",
+                "Recibe atención exclusiva y asesoramiento experto en sesiones individuales diseñadas para abordar tus necesidades y objetivos específicos en fotografía.",
+                "Cada sesión está adaptada a tu nivel y estilo, brindándote apoyo y feedback personalizado para ayudarte a alcanzar tu máximo potencial.",
+                "¿Listo para llevar tu fotografía al siguiente nivel con orientación experta y apoyo personalizado? 🌟",
+                "¡Reserva tu sesión de mentoring 1 a 1 y empieza a avanzar hacia tus metas fotográficas con confianza!"
+            ]
+            ,
+            whatsappMessage: 'Hola, estoy interesado en el Mentoring 1 to 1',
         }
     }
 };
