@@ -153,8 +153,7 @@ const projectData = {
                 "Aprende a aplicar ajustes básicos de edición para transformar tus fotos en creaciones visuales impactantes, sin necesidad de experiencia previa.",
                 "¿Listo para dar el primer paso en el arte de la edición y ver cómo tus fotos cobran vida? 🌟",
                 "¡Inscríbete y comienza a transformar tus imágenes en obras maestras con técnicas accesibles y prácticas!"
-            ]
-            ,
+            ],
             whatsappMessage: 'Hola, estoy interesado en la Clase de Edición fotográfica',
         },
         curso5: {
@@ -166,8 +165,7 @@ const projectData = {
                 "Cada sesión está adaptada a tu nivel y estilo, brindándote apoyo y feedback personalizado para ayudarte a alcanzar tu máximo potencial.",
                 "¿Listo para llevar tu fotografía al siguiente nivel con orientación experta y apoyo personalizado? 🌟",
                 "¡Reserva tu sesión de mentoring 1 a 1 y empieza a avanzar hacia tus metas fotográficas con confianza!"
-            ]
-            ,
+            ],
             whatsappMessage: 'Hola, estoy interesado en el Mentoring 1 to 1',
         }
     }

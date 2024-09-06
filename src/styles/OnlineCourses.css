@@ -25,12 +25,13 @@
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra sutil */
     padding: 20px; /* Espaciado interno */
-    height: 35vh;
-    width: 37vw;
+    height: 40vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centra el contenido horizontalmente */
     background-color: #f5dfb0;
+    font-size: 16px;
 }
 
 /* Contenedor del botón de WhatsApp dentro del curso */
@@ -56,5 +57,8 @@
 }
 
 .course-text{
-    height: 20vh;
+    height: 25vh;
+    width: 33vw;
+    font-size: 16px;
+    
 }
